@@ -1,24 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>ABout</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
-    
-    <header><h1 style="text-align:left;">Home</h1></header>
-    <nav id="nav"><ul class="na">
-        <li class="n">Home</li>
-        <li class="n">About</li>
-        <li class="n">Gallery</li>
-        <li class="n">Works</li>
-    </ul></nav>
-    <main></main>
-    <section></section>
+
+    <header>
+        <h1 style="text-align:left;">Home</h1>
+    </header>
+    <nav id="nav">
+        <ul class="na">
+            <li class="n"><a href="/home.html">Home</a></li>
+            <li class="n"><a href="/about.html">About</a></li>
+            <li class="n"><a href="/gallery.html">Gallery</a></li>
+            <li class="n"><a href="/works.html">Works</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <img src="/assets/image/Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg" alt="Jan Vermeer" width="250px">
+
+            <ol class="about">
+                <li>Mit csinált eddig</li>
+                <ul>
+                    <li>Képei közül mindössze csak hármat látott el dátummal</li>
+                    <li>Képeit legtöbbször gazdag megrendelőknek festette</li>
+                    <li>Vermeer pályája során számos témával foglalkozott</li>
+                </ul>
+                <li>Erősségei</li>
+                <ul>
+                    <li>Nagy figyelmet fordított a perspektívára</li>
+                    <li>Igyekezett a látvány által megteremteni a tapinthatatlan, irracionális világot</li>
+                    <li>Megengedhette magának, hogy kevés festményt készítsen</li>
+                </ul>
+                <li>Hobby</li>
+                <ul>
+                    <li>allegórikus képek készítése</li>
+                    <li>historkus képek készítése</li>
+                    <li>moralizáló képek készítése</li>
+                </ul>
+                <li>Milyen nyelevken beszélt</li>
+                <ul>
+                    <li>holland</li>
+                    <li>flamand</li>
+                </ul>
+            </ol>
+        </section>
+        <section>
+            <form action="/action_page.php">
+                <label for="name">Név:</label><br>
+                <input type="text" id="name" name="name" value="név" minlength="5"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" value="email"><br><br>
+                <label for="message">Üzenet:</label><br>
+                <textarea name="message" rows="10" cols="30" pattern="[A-Za-z0-9]" pattern=".{20,}" required>Üzenet</textarea><br><br>
+                <input type="submit" value="Küldés">
+              </form>
+        </section>
+    </main>
     <footer>
-        <button><a href="#nav">Lap teteje</a></button>
+        <button class="goup"><a href="#nav"><i class="arrow up"></i></a></button>
     </footer>
 
 </body>
+
 </html>
